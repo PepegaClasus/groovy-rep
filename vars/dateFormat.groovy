@@ -4,7 +4,9 @@ import java.text.SimpleDateFormat
 import java.util.Date
 
 def DateFormat (String dateTime){
-    Date date = Date.parse ('dd MMM yyyy HH:mm:ss')
-    String newDate = date.format('HH:mm:ss')
+        SimpleDateFormat formatter = new SimpleDateFormat("HH:mm:ss")
+        Date date = new Date()
+        String newDate = formatter.format(date)
+        println newDate
 
 }
